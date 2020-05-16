@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hackaton semana 7</title>
+    <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
     <!-- METODOLOGIA BEM
@@ -14,26 +15,25 @@
 
     <header class="contenedor navBar">
         <nav class="navBar__box">
-            <img class="navBar__box-logotipo" src="./images/logotipo.png">
-            <ul class="navBar__box-list">
-                <li><a class="navBar__box-list items" href="#">Home</a></li>
-                <li><a class="navBar__box-list items" href="#">Espectaculo</a></li>
-                <li><a class="navBar__box-list items" href="#">Deporte</a></li>
-            </ul>
+            <img class="navBar__box-logotipo" src="./images/logo.png">
+            <div>
+                <ul class="navBar__box-list">
+                <a class="navBar__box-list items" href="#">Home</a>
+                <a class="navBar__box-list items" href="#">Espectaculo</a>
+                <a class="navBar__box-list items" href="#">Deporte</a>
+            </ul></div>
+            
         </nav>
     </header>
 
-    <main class="contenedor">
+    <main class="contenedor main">
 
         <section class="banner">
-            <div class="banner__box">
-                <div class="banner__box-images">
-                    <img src="./images/banner.png"  class="banner__box-images--actually">
-                    <img src="./images/fondo banner.png" class="banner__box-images--fondo">
-                    <img src="./images/ellipseBorde.png" class="banner__box-images--circle">
-                    <h1 class="banner__box-title">Blog Afrianska</h1>
-                    <p class="banner__box-p-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat commodi, ducimus error voluptatem ipsum delectus quaerat</p>
-                </div>
+            <div class="banner__box">              
+                    <h1 class="banner__box-title">Blog Afrianksa </h1>
+                    
+                    <p class="banner__box-p-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat commod</p>
+                
             </div>
         </section>
 
@@ -45,13 +45,13 @@
 
         <section class="popular">
             <div class="popular__box">
-                <span class="popular__box-title"><h2>POPULAR</h2></span>
+                <span class="popular__box-title">POPULAR</span>
                 <div class="popular__box-imagen"> 
                     <img src="./images/img-popular.png" class="popular__box-imagen--primary">
                 </div>
 
                 <div class="popular__box-descripcion"> 
-                    <h3 class="popular__box-descripcion--big-title">Feugiat sodales at.</h3>
+                    <h3 class="popular__box-descripcion--little-title">Feugiat sodales at consectetur adipisicing.</h3>
                     <p class="popular__box-descripcion--texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo labore illum totam magni fugit iusto, asperiores iure facilis nesciunt provident sed harum ea sint iste dolorum debitis ullam soluta? Deleniti?</p>
                     <p class="descripcion--autor">Samanta</p>
                     <p class="descipcion--fecha">May, 05 3 min read
@@ -60,8 +60,8 @@
                     </p>  
                 </div>
 
-                <div class="popular__box-sdescipcion">
-                    <img src="./images/img-post-2.png" class="popular__box-imagen--secondary">
+                <div class="popular__box-descipcion">
+                    <img src="./images/img-post-2.png" class="popular-imagen">
                     <h2 class="popular__box-descripcion--little-title">Lorem ipsum dolor sit amet consectetur</h2>
                     <p class="popular__box-descripcion--texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo labore illum totam magni fugit iusto, asperiores iure facilis nesciunt provident sed harum ea sint iste dolorum debitis ullam soluta? Deleniti?</p>
                     <p class="descripcion--autor">Samanta</p>
@@ -71,8 +71,8 @@
                     </p>
                 </div>
 
-                <div class="popular__box-tdescipcion">
-                    <img src="./images/img-post-3.png" class="popular__box-imagen--tertiary">
+                <div class="popular__box-descipcion">
+                    <img src="./images/img-post-3.png" class="popular-imagen">
                     <h2 class="popular__box-descripcion--little-title">Lorem ipsum dolor sit amet consectetur</h2>
                     <p class="popular__box-descripcion--texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo labore illum totam magni fugit iusto, asperiores iure facilis nesciunt provident sed harum ea sint iste dolorum debitis ullam soluta? Deleniti?</p>
                     <p class="descripcion--autor">Samanta</p>
@@ -82,10 +82,10 @@
                     </p>
                 </div>
 
-                <div class="popular__box-cdescipcion">
-                    <img src="./images/img-post-4 .png" class="popular__box-imagen--tertiary">
+                <div class="popular__box-descipcion">
+                    <img src="./images/img-post-4 .png" class="popular-imagen">
                     <h2 class="popular__box-descripcion--little-title">Lorem ipsum dolor sit amet consectetur</h2>
-                    <p class="descripcion--texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo labore illum totam magni fugit iusto, asperiores iure facilis nesciunt provident sed harum ea sint iste dolorum debitis ullam soluta? Deleniti?</p>
+                    <p class="popular__box-descripcion--texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo labore illum totam magni fugit iusto, asperiores iure facilis nesciunt provident sed harum ea sint iste dolorum debitis ullam soluta? Deleniti?</p>
                     <p class="descripcion--autor">Samanta</p>
                     <p class="descipcion--fecha">May, 05 3 min read
                         <img src="./images/icon-2426378_1280.png" width="10px" height="10px" class="compartir">
@@ -100,9 +100,22 @@
         </section>
 
         <section class="article">
-            <span class="article__title"><h2>ALL ARTICLE/h2></span>
+            <span class="article__title"><h2>ALL ARTICLE</h2></span>
             <div class="article__box">
                 <div class="article__box-img"> <img src="./images/article-img1.png"></div>
+                <article class="article__box-text"> 
+                <h2 class="article__box-text--little-title">Lorem ipsum dolor sit amet consectetur</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem labore asperiores laudantium ullam nesciunt doloribus reiciendis. Fugit animi facere et dicta placeat, ipsa in repellendus! Eius in voluptatum officiis animi?</p>
+                <p class="descripcion--autor">Samanta</p>
+                <p class="descipcion--fecha">May, 05 3 min read
+                    <img src="./images/icon-2426378_1280.png" width="10px" height="10px" class="compartir">
+                    <img src="./images/8665e39f2880934120b3c37131210042-icono-de-marcador-de-instagram-by-vexels.png" width="10px" height="10px" class="marcador">
+                </p>
+                </article>
+            </div>
+
+            <div class="article__box">
+                <div class="article__box-img"> <img src="./images/article-img2.png"></div>
                 <article class="article__box-text"> 
                 <h2 class="article__box-descripcion--little-title">Lorem ipsum dolor sit amet consectetur</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem labore asperiores laudantium ullam nesciunt doloribus reiciendis. Fugit animi facere et dicta placeat, ipsa in repellendus! Eius in voluptatum officiis animi?</p>
@@ -115,7 +128,31 @@
             </div>
 
             <div class="article__box">
-                <div class="article__box-img"> <img src="./images/article-img2.png"></div>
+                <div class="article__box-img"> <img src="./images/article-img3.png"></div>
+                <article class="article__box-text"> 
+                <h2 class="article__box-descripcion--little-title">Lorem ipsum dolor sit amet consectetur</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem labore asperiores laudantium ullam nesciunt doloribus reiciendis. Fugit animi facere et dicta placeat, ipsa in repellendus! Eius in voluptatum officiis animi?</p>
+                <p class="descripcion--autor">Samanta</p>
+                <p class="descipcion--fecha">May, 05 3 min read
+                    <img src="./images/icon-2426378_1280.png" width="10px" height="10px" class="compartir">
+                    <img src="./images/8665e39f2880934120b3c37131210042-icono-de-marcador-de-instagram-by-vexels.png" width="10px" height="10px" class="marcador">
+                </p>
+                </article>
+            </div>
+            <div class="article__box">
+                <div class="article__box-img"> <img src="./images/article-img4.png"></div>
+                <article class="article__box-text"> 
+                <h2 class="article__box-descripcion--little-title">Lorem ipsum dolor sit amet consectetur</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem labore asperiores laudantium ullam nesciunt doloribus reiciendis. Fugit animi facere et dicta placeat, ipsa in repellendus! Eius in voluptatum officiis animi?</p>
+                <p class="descripcion--autor">Samanta</p>
+                <p class="descipcion--fecha">May, 05 3 min read
+                    <img src="./images/icon-2426378_1280.png" width="10px" height="10px" class="compartir">
+                    <img src="./images/8665e39f2880934120b3c37131210042-icono-de-marcador-de-instagram-by-vexels.png" width="10px" height="10px" class="marcador">
+                </p>
+                </article>
+            </div>
+            <div class="article__box">
+                <div class="article__box-img"> <img src="./images/article-img5.png"></div>
                 <article class="article__box-text"> 
                 <h2 class="article__box-descripcion--little-title">Lorem ipsum dolor sit amet consectetur</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem labore asperiores laudantium ullam nesciunt doloribus reiciendis. Fugit animi facere et dicta placeat, ipsa in repellendus! Eius in voluptatum officiis animi?</p>
